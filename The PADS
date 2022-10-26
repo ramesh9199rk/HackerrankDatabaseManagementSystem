@@ -1,0 +1,6 @@
+/*
+Enter your query here.
+*/
+SELECT CONCAT(Name, "(", LEFT(Occupation,1),")") FROM Occupations ORDER BY Name ASC;
+
+SELECT CONCAT("There are a total of ", Count(Occupation), " ", LOWER(Occupation), "s." ) FROM Occupations GROUP BY Occupation ORDER BY Count(Occupation), Occupation;
